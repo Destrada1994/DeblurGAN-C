@@ -23,4 +23,3 @@ python python_scripts/train.py --input_folder images/Input --n_images_train 50 -
 **Run Validation**
 
 python python_scripts/valid.py --input_dir=images/Input_valid --target_dir=images/Target_valid --weight_path=weights/generator.h5 --output_dir Enhanced_Valid
-
