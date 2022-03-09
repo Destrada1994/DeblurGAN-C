@@ -1,0 +1,13 @@
+
+python scripts_process/train.py --input_folder images_DS_noise_blur/Input --n_images_train 800 --n_images_valid 1 --batch_size 5 --epoch_num 151 --critic_updates 5 --loss_type 5 --loss_weight 100
+
+-- validation
+python scripts_process/valid.py --input_dir images_DS_only/Input_valid --target_dir images_DS_only/Target_valid --weight_path weights/DS_only/generator.h5 --output_dir Enhanced_Valid_DS_only
+python scripts_process/valid.py --input_dir images_DS_noise/Input_valid --target_dir images_DS_noise/Target_valid --weight_path weights/DS_noise/generator.h5 --output_dir Enhanced_Valid_DS_noise
+python scripts_process/valid.py --input_dir images_DS_noise_blur/Input_valid --target_dir images_DS_noise_blur/Target_valid --weight_path weights/DS_noise_blur/generator.h5 --output_dir Enhanced_Valid_DS_noise_blur
+
+--Sample
+python scripts_process/valid.py --input_dir images/Sample_new/Input_DS_only_mean --target_dir images/Sample_new/Target --weight_path weights/DS_only/generator.h5 --output_dir Enhanced_Single_DS_only
+python scripts_process/valid.py --input_dir images/Sample_new/Input_DS_noise_mean --target_dir images/Sample_new/Target --weight_path weights/DS_noise/generator.h5 --output_dir Enhanced_Single_DS_noise
+python scripts_process/valid.py --input_dir images/Sample_new/Input_DS_noise_mean --target_dir images/Sample_new/Target --weight_path weights/DS_noise_blur/generator.h5 --output_dir Enhanced_Single_DS_noise_blur
+

@@ -1,0 +1,129 @@
+
+--Training Code:
+
+python scripts_process/train.py --input_folder images/Input_0 --n_images_train 800 --n_images_valid 1 --batch_size 40 --epoch_num 301 --critic_updates 5 --loss_type 1 --loss_weight 100
+python scripts_process/train.py --input_folder images/Input_0 --n_images_train 800 --n_images_valid 1 --batch_size 40 --epoch_num 301 --critic_updates 5 --loss_type 2 --loss_weight 100
+python scripts_process/train.py --input_folder images/Input_0 --n_images_train 800 --n_images_valid 1 --batch_size 40 --epoch_num 301 --critic_updates 5 --loss_type 3 --loss_weight 100
+python scripts_process/train.py --input_folder images/Input_0 --n_images_train 800 --n_images_valid 1 --batch_size 40 --epoch_num 301 --critic_updates 5 --loss_type 4 --loss_weight 100
+python scripts_process/train.py --input_folder images/Input_0 --n_images_train 800 --n_images_valid 1 --batch_size 40 --epoch_num 301 --critic_updates 5 --loss_type 5 --loss_weight 100
+python scripts_process/train.py --input_folder images/Input_10e8 --n_images_train 800 --n_images_valid 1 --batch_size 40 --epoch_num 301 --critic_updates 5 --loss_type 1 --loss_weight 100
+python scripts_process/train.py --input_folder images/Input_10e8 --n_images_train 800 --n_images_valid 1 --batch_size 40 --epoch_num 301 --critic_updates 5 --loss_type 2 --loss_weight 100
+python scripts_process/train.py --input_folder images/Input_10e8 --n_images_train 800 --n_images_valid 1 --batch_size 40 --epoch_num 301 --critic_updates 5 --loss_type 3 --loss_weight 100
+python scripts_process/train.py --input_folder images/Input_10e8 --n_images_train 800 --n_images_valid 1 --batch_size 40 --epoch_num 301 --critic_updates 5 --loss_type 4 --loss_weight 100
+python scripts_process/train.py --input_folder images/Input_10e8 --n_images_train 800 --n_images_valid 1 --batch_size 40 --epoch_num 301 --critic_updates 5 --loss_type 5 --loss_weight 100
+python scripts_process/train.py --input_folder images/Input_10e9 --n_images_train 800 --n_images_valid 1 --batch_size 40 --epoch_num 301 --critic_updates 5 --loss_type 1 --loss_weight 100
+python scripts_process/train.py --input_folder images/Input_10e9 --n_images_train 800 --n_images_valid 1 --batch_size 40 --epoch_num 301 --critic_updates 5 --loss_type 2 --loss_weight 100
+python scripts_process/train.py --input_folder images/Input_10e9 --n_images_train 800 --n_images_valid 1 --batch_size 40 --epoch_num 301 --critic_updates 5 --loss_type 3 --loss_weight 100
+python scripts_process/train.py --input_folder images/Input_10e9 --n_images_train 800 --n_images_valid 1 --batch_size 40 --epoch_num 301 --critic_updates 5 --loss_type 4 --loss_weight 100
+python scripts_process/train.py --input_folder images/Input_10e9 --n_images_train 800 --n_images_valid 1 --batch_size 40 --epoch_num 301 --critic_updates 5 --loss_type 5 --loss_weight 100
+python scripts_process/train.py --input_folder images/Input_10e10 --n_images_train 800 --n_images_valid 1 --batch_size 40 --epoch_num 301 --critic_updates 5 --loss_type 1 --loss_weight 100
+python scripts_process/train.py --input_folder images/Input_10e10 --n_images_train 800 --n_images_valid 1 --batch_size 40 --epoch_num 301 --critic_updates 5 --loss_type 2 --loss_weight 100
+python scripts_process/train.py --input_folder images/Input_10e10 --n_images_train 800 --n_images_valid 1 --batch_size 40 --epoch_num 301 --critic_updates 5 --loss_type 3 --loss_weight 100
+python scripts_process/train.py --input_folder images/Input_10e10 --n_images_train 800 --n_images_valid 1 --batch_size 40 --epoch_num 301 --critic_updates 5 --loss_type 4 --loss_weight 100
+python scripts_process/train.py --input_folder images/Input_10e10 --n_images_train 800 --n_images_valid 1 --batch_size 40 --epoch_num 301 --critic_updates 5 --loss_type 5 --loss_weight 100
+
+python scripts_process/train.py --input_folder images/Input_0 --n_images_train 800 --n_images_valid 1 --batch_size 40 --epoch_num 301 --critic_updates 5 --loss_type 6 --loss_weight 100
+python scripts_process/train.py --input_folder images/Input_10e8 --n_images_train 800 --n_images_valid 1 --batch_size 40 --epoch_num 301 --critic_updates 5 --loss_type 6 --loss_weight 100
+python scripts_process/train.py --input_folder images/Input_10e9 --n_images_train 800 --n_images_valid 1 --batch_size 40 --epoch_num 301 --critic_updates 5 --loss_type 6 --loss_weight 100
+
+
+python scripts_process/train.py --input_folder images/Input_10e10 --n_images_train 800 --n_images_valid 1 --batch_size 40 --epoch_num 301 --critic_updates 5 --loss_type 6 --loss_weight 100
+
+
+python scripts_process/train.py --input_folder images/Input_10e9 --n_images_train 800 --n_images_valid 1 --batch_size 20 --epoch_num 301 --critic_updates 5 --loss_type 3 --loss_weight 100
+python scripts_process/train.py --input_folder images/Input_10e10 --n_images_train 800 --n_images_valid 1 --batch_size 20 --epoch_num 301 --critic_updates 5 --loss_type 3 --loss_weight 100
+
+--Full Image validation Code:
+
+python scripts_process/valid_full.py --input_dir images/Input_0_valid_full --target_dir images/target_valid_full --weight_path weights/_Input_0/MSE_loss.h5 --output_dir Enhanced_Input_0_MSE
+python scripts_process/valid_full.py --input_dir images/Input_0_valid_full --target_dir images/target_valid_full --weight_path weights/_Input_0/l1_loss.h5 --output_dir Enhanced_Input_0_l1
+python scripts_process/valid_full.py --input_dir images/Input_0_valid_full --target_dir images/target_valid_full --weight_path weights/_Input_0/correntropy_05_loss.h5 --output_dir Enhanced_Input_0_correntropy_05
+python scripts_process/valid_full.py --input_dir images/Input_0_valid_full --target_dir images/target_valid_full --weight_path weights/_Input_0/VGG16_loss.h5 --output_dir Enhanced_Input_0_VGG16
+python scripts_process/valid_full.py --input_dir images/Input_0_valid_full --target_dir images/target_valid_full --weight_path weights/_Input_0/VGG16_correntropy_05_loss.h5 --output_dir Enhanced_Input_0_VGG16_correntropy_05
+
+python scripts_process/valid_full.py --input_dir images/Input_10e8_valid_full --target_dir images/target_valid_full --weight_path weights/_Input_10e8/MSE_loss.h5 --output_dir Enhanced_Input_10e8_MSE
+python scripts_process/valid_full.py --input_dir images/Input_10e8_valid_full --target_dir images/target_valid_full --weight_path weights/_Input_10e8/l1_loss.h5 --output_dir Enhanced_Input_10e8_l1
+python scripts_process/valid_full.py --input_dir images/Input_10e8_valid_full --target_dir images/target_valid_full --weight_path weights/_Input_10e8/correntropy_05_loss.h5 --output_dir Enhanced_Input_10e8_correntropy_05
+python scripts_process/valid_full.py --input_dir images/Input_10e8_valid_full --target_dir images/target_valid_full --weight_path weights/_Input_10e8/VGG16_loss.h5 --output_dir Enhanced_Input_10e8_VGG16
+python scripts_process/valid_full.py --input_dir images/Input_10e8_valid_full --target_dir images/target_valid_full --weight_path weights/_Input_10e8/VGG16_correntropy_05_loss.h5 --output_dir Enhanced_Input_10e8_VGG16_correntropy_05
+
+python scripts_process/valid_full.py --input_dir images/Input_10e9_valid_full --target_dir images/target_valid_full --weight_path weights/_Input_10e9/MSE_loss.h5 --output_dir Enhanced_Input_10e9_MSE
+python scripts_process/valid_full.py --input_dir images/Input_10e9_valid_full --target_dir images/target_valid_full --weight_path weights/_Input_10e9/l1_loss.h5 --output_dir Enhanced_Input_10e9_l1
+python scripts_process/valid_full.py --input_dir images/Input_10e9_valid_full --target_dir images/target_valid_full --weight_path weights/_Input_10e9/correntropy_05_loss.h5 --output_dir Enhanced_Input_10e9_correntropy_05
+python scripts_process/valid_full.py --input_dir images/Input_10e9_valid_full --target_dir images/target_valid_full --weight_path weights/_Input_10e9/VGG16_loss.h5 --output_dir Enhanced_Input_10e9_VGG16
+python scripts_process/valid_full.py --input_dir images/Input_10e9_valid_full --target_dir images/target_valid_full --weight_path weights/_Input_10e9/VGG16_correntropy_05_loss.h5 --output_dir Enhanced_Input_10e9_VGG16_correntropy_05
+
+python scripts_process/valid_full.py --input_dir images/Input_10e10_valid_full --target_dir images/target_valid_full --weight_path weights/_Input_10e10/MSE_loss.h5 --output_dir Enhanced_Input_10e10_MSE
+python scripts_process/valid_full.py --input_dir images/Input_10e10_valid_full --target_dir images/target_valid_full --weight_path weights/_Input_10e10/l1_loss.h5 --output_dir Enhanced_Input_10e10_l1
+python scripts_process/valid_full.py --input_dir images/Input_10e10_valid_full --target_dir images/target_valid_full --weight_path weights/_Input_10e10/correntropy_05_loss.h5 --output_dir Enhanced_Input_10e10_correntropy_05
+python scripts_process/valid_full.py --input_dir images/Input_10e10_valid_full --target_dir images/target_valid_full --weight_path weights/_Input_10e10/VGG16_loss.h5 --output_dir Enhanced_Input_10e10_VGG16
+python scripts_process/valid_full.py --input_dir images/Input_10e10_valid_full --target_dir images/target_valid_full --weight_path weights/_Input_10e10/VGG16_correntropy_05_loss.h5 --output_dir Enhanced_Input_10e10_VGG16_correntropy_05
+
+python scripts_process/valid_full.py --input_dir images/Input_0_valid_full --target_dir images/target_valid_full --weight_path weights/_Input_10e10/VGG16_correntropy_05_100_loss.h5 --output_dir Enhanced_Input_10e10_VGG16_correntropy_05_100
+python scripts_process/valid_full.py --input_dir images/Input_10e8_valid_full --target_dir images/target_valid_full --weight_path weights/_Input_10e10/VGG16_correntropy_05_100_loss.h5 --output_dir Enhanced_Input_10e10_VGG16_correntropy_05_100
+python scripts_process/valid_full.py --input_dir images/Input_10e9_valid_full --target_dir images/target_valid_full --weight_path weights/_Input_10e10/VGG16_correntropy_05_100_loss.h5 --output_dir Enhanced_Input_10e10_VGG16_correntropy_05_100
+python scripts_process/valid_full.py --input_dir images/Input_10e10_valid_full --target_dir images/target_valid_full --weight_path weights/_Input_10e10/VGG16_correntropy_05_100_loss.h5 --output_dir Enhanced_Input_10e10_VGG16_correntropy_05_100
+
+--Patch Validation Code:
+python scripts_process/valid.py --input_dir images/Crops_0 --target_dir images/Target_Crops --weight_path weights/_Input_0/MSE_loss.h5 --output_dir Enhanced_Crops_0
+python scripts_process/valid.py --input_dir images/Crops_0 --target_dir images/Target_Crops --weight_path weights/_Input_0/l1_loss.h5 --output_dir Enhanced_Crops_0
+python scripts_process/valid.py --input_dir images/Crops_0 --target_dir images/Target_Crops --weight_path weights/_Input_0/correntropy_05_loss.h5 --output_dir Enhanced_Crops_0
+python scripts_process/valid.py --input_dir images/Crops_0 --target_dir images/Target_Crops --weight_path weights/_Input_0/VGG16_loss.h5 --output_dir Enhanced_Crops_0
+python scripts_process/valid.py --input_dir images/Crops_0 --target_dir images/Target_Crops --weight_path weights/_Input_0/VGG16_correntropy_05_loss.h5 --output_dir Enhanced_Crops_0
+
+python scripts_process/valid.py --input_dir images/Crops_10e8 --target_dir images/Target_Crops --weight_path weights/_Input_10e8/MSE_loss.h5 --output_dir Enhanced_Crops_10e8
+python scripts_process/valid.py --input_dir images/Crops_10e8 --target_dir images/Target_Crops --weight_path weights/_Input_10e8/l1_loss.h5 --output_dir Enhanced_Crops_10e8
+python scripts_process/valid.py --input_dir images/Crops_10e8 --target_dir images/Target_Crops --weight_path weights/_Input_10e8/correntropy_05_loss.h5 --output_dir Enhanced_Crops_10e8
+python scripts_process/valid.py --input_dir images/Crops_10e8 --target_dir images/Target_Crops --weight_path weights/_Input_10e8/VGG16_loss.h5 --output_dir Enhanced_Crops_10e8
+python scripts_process/valid.py --input_dir images/Crops_10e8 --target_dir images/Target_Crops --weight_path weights/_Input_10e8/VGG16_correntropy_05_loss.h5 --output_dir Enhanced_Crops_10e8
+
+python scripts_process/valid.py --input_dir images/Crops_10e9 --target_dir images/Target_Crops --weight_path weights/_Input_10e9/MSE_loss.h5 --output_dir Enhanced_Crops_10e9
+python scripts_process/valid.py --input_dir images/Crops_10e9 --target_dir images/Target_Crops --weight_path weights/_Input_10e9/l1_loss.h5 --output_dir Enhanced_Crops_10e9
+python scripts_process/valid.py --input_dir images/Crops_10e9 --target_dir images/Target_Crops --weight_path weights/_Input_10e9/correntropy_05_loss.h5 --output_dir Enhanced_Crops_10e9
+python scripts_process/valid.py --input_dir images/Crops_10e9 --target_dir images/Target_Crops --weight_path weights/_Input_10e9/VGG16_loss.h5 --output_dir Enhanced_Crops_10e9
+python scripts_process/valid.py --input_dir images/Crops_10e9 --target_dir images/Target_Crops --weight_path weights/_Input_10e9/VGG16_correntropy_05_loss.h5 --output_dir Enhanced_Crops_10e9
+
+python scripts_process/valid.py --input_dir images/Crops_10e10 --target_dir images/Target_Crops --weight_path weights/_Input_10e10/MSE_loss.h5 --output_dir Enhanced_Crops_10e10
+python scripts_process/valid.py --input_dir images/Crops_10e10 --target_dir images/Target_Crops --weight_path weights/_Input_10e10/l1_loss.h5 --output_dir Enhanced_Crops_10e10
+python scripts_process/valid.py --input_dir images/Crops_10e10 --target_dir images/Target_Crops --weight_path weights/_Input_10e10/correntropy_05_loss.h5 --output_dir Enhanced_Crops_10e10
+python scripts_process/valid.py --input_dir images/Crops_10e10 --target_dir images/Target_Crops --weight_path weights/_Input_10e10/VGG16_loss.h5 --output_dir Enhanced_Crops_10e10
+python scripts_process/valid.py --input_dir images/Crops_10e10 --target_dir images/Target_Crops --weight_path weights/_Input_10e10/VGG16_correntropy_05_loss.h5 --output_dir Enhanced_Crops_10e10
+
+
+
+
+
+
+python scripts_process/valid.py --input_dir images\input_crops_img_08\input_0 --target_dir images\input_crops_img_08 --weight_path weights/_Input_0/VGG19_loss.h5 --output_dir Enhanced_Crops_0
+python scripts_process/valid.py --input_dir images\input_crops_img_08\input_10e8 --target_dir images\input_crops_img_08 --weight_path weights/_Input_10e8/VGG19_loss.h5 --output_dir Enhanced_Crops_10e8
+python scripts_process/valid.py --input_dir images\input_crops_img_08\input_10e9 --target_dir images\input_crops_img_08 --weight_path weights/_Input_10e9/VGG19_loss.h5 --output_dir Enhanced_Crops_10e9
+
+
+
+
+
+python scripts_process/valid.py --input_dir images/Input_0_valid_full --target_dir images/Target_valid_full --weight_path weights/_Input_0/MSE_loss.h5 --output_dir valid/Enhanced_Input_0_valid_MSE
+python scripts_process/valid.py --input_dir images/Input_0_valid_full --target_dir images/Target_valid_full --weight_path weights/_Input_0/l1_loss.h5 --output_dir valid/Enhanced_Input_0_valid_L1
+python scripts_process/valid.py --input_dir images/Input_0_valid_full --target_dir images/Target_valid_full --weight_path weights/_Input_0/correntropy_05_loss.h5 --output_dir valid/Enhanced_Input_0_valid_correntropy_05
+python scripts_process/valid.py --input_dir images/Input_0_valid_full --target_dir images/Target_valid_full --weight_path weights/_Input_0/VGG16_loss.h5 --output_dir valid/Enhanced_Input_0_valid_VGG16
+python scripts_process/valid.py --input_dir images/Input_0_valid_full --target_dir images/Target_valid_full --weight_path weights/_Input_0/VGG16_correntropy_05_loss.h5 --output_dir valid/Enhanced_Input_0_valid_VGG16_correntropy_05
+
+python scripts_process/valid.py --input_dir images/Input_10e8_valid_full --target_dir images/Target_valid_full --weight_path weights/_Input_10e8/MSE_loss.h5 --output_dir valid/Enhanced_Input_10e8_valid_MSE
+python scripts_process/valid.py --input_dir images/Input_10e8_valid_full --target_dir images/Target_valid_full --weight_path weights/_Input_10e8/l1_loss.h5 --output_dir valid/Enhanced_Input_10e8_valid_L1
+python scripts_process/valid.py --input_dir images/Input_10e8_valid_full --target_dir images/Target_valid_full --weight_path weights/_Input_10e8/correntropy_05_loss.h5 --output_dir valid/Enhanced_Input_10e8_valid_correntropy_05
+python scripts_process/valid.py --input_dir images/Input_10e8_valid_full --target_dir images/Target_valid_full --weight_path weights/_Input_10e8/VGG16_loss.h5 --output_dir valid/Enhanced_Input_10e8_valid_VGG16
+python scripts_process/valid.py --input_dir images/Input_10e8_valid_full --target_dir images/Target_valid_full --weight_path weights/_Input_10e8/VGG16_correntropy_05_loss.h5 --output_dir valid/Enhanced_Input_10e8_valid_VGG16_correntropy_05
+
+python scripts_process/valid.py --input_dir images/Input_10e9_valid_full --target_dir images/Target_valid_full --weight_path weights/_Input_10e9/MSE_loss.h5 --output_dir valid/Enhanced_Input_10e9_valid_MSE
+python scripts_process/valid.py --input_dir images/Input_10e9_valid_full --target_dir images/Target_valid_full --weight_path weights/_Input_10e9/l1_loss.h5 --output_dir valid/Enhanced_Input_10e9_valid_L1
+python scripts_process/valid.py --input_dir images/Input_10e9_valid_full --target_dir images/Target_valid_full --weight_path weights/_Input_10e9/correntropy_05_loss.h5 --output_dir valid/Enhanced_Input_10e9_valid_correntropy_05
+python scripts_process/valid.py --input_dir images/Input_10e9_valid_full --target_dir images/Target_valid_full --weight_path weights/_Input_10e9/VGG16_loss.h5 --output_dir valid/Enhanced_Input_10e9_valid_VGG16
+python scripts_process/valid.py --input_dir images/Input_10e9_valid_full --target_dir images/Target_valid_full --weight_path weights/_Input_10e9/VGG16_correntropy_05_loss.h5 --output_dir valid/Enhanced_Input_10e9_valid_VGG16_correntropy_05
+
+python scripts_process/valid.py --input_dir images/Input_10e10_valid_full --target_dir images/Target_valid_full --weight_path weights/_Input_10e10/MSE_loss.h5 --output_dir valid/Enhanced_Input_10e10_valid_MSE
+python scripts_process/valid.py --input_dir images/Input_10e10_valid_full --target_dir images/Target_valid_full --weight_path weights/_Input_10e10/l1_loss.h5 --output_dir valid/Enhanced_Input_10e10_valid_L1
+python scripts_process/valid.py --input_dir images/Input_10e10_valid_full --target_dir images/Target_valid_full --weight_path weights/_Input_10e10/correntropy_05_loss.h5 --output_dir valid/Enhanced_Input_10e10_valid_correntropy_05
+python scripts_process/valid.py --input_dir images/Input_10e10_valid_full --target_dir images/Target_valid_full --weight_path weights/_Input_10e10/VGG16_loss.h5 --output_dir valid/Enhanced_Input_10e10_valid_VGG16
+python scripts_process/valid.py --input_dir images/Input_10e10_valid_full --target_dir images/Target_valid_full --weight_path weights/_Input_10e10/VGG16_correntropy_05_loss.h5 --output_dir valid/Enhanced_Input_10e10_valid_VGG16_correntropy_05
+
+
