@@ -1,0 +1,6 @@
+--train
+python scripts_process/train.py --input_folder images/Input --n_images_train 50 --n_images_valid 10 --batch_size 5 --epoch_num 10 --critic_updates 5 --loss_type 5 --loss_weight 100
+
+-- validation
+python scripts_process/valid_full.py --input_dir images/Input_valid_full --target_dir images/Target_valid_full --weight_path weights/generator.h5 --output_dir Enhanced_Valid
+
