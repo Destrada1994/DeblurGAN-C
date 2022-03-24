@@ -29,10 +29,11 @@ Ydim=25; %Y dimension of Filter
 Xsep=(1.55*10^-6); %Pixel Seperation in meters
 Ysep=(1.55*10^-6); %Pixel Seperation
 gauss_sigma=1.2;
+PSF_gauss=fspecial('gaussian',Xdim,gauss_sigma);
 I0=max(PSF_gauss(:));  %Peak amplitude of the disk
 gamma=550*10^-9; %Wavelength of Light in meters
 F=8; %F-number of Lens
-
+PSF_main=AiryFunction(Xdim,Ydim,Xsep,Ysep,I0,gamma,F);
 var_lim=0.01; %%minimum Variation limit for crops
 
 
@@ -53,9 +54,6 @@ mkdir(Target_valid_full_folder)
 mkdir(Input_folder)
 mkdir(Input_valid_folder)
 mkdir(Input_valid_full_folder)
-
-PSF_gauss=fspecial('gaussian',Xdim,gauss_sigma);
-PSF_main=AiryFunction(Xdim,Ydim,Xsep,Ysep,I0,gamma,F);
 
 figure(1)
 subplot(1,2,1)
